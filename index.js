@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const TelegramBot = require('node-telegram-bot-api');
 
 // Replace 'YOUR_BOT_TOKEN' with the actual token you get from the BotFather on Telegram
-const token = '6777716797:AAFZvSXr2GCbupXQXLyNKK_sGsQnfpfYfI0';
+const token = '6978212821:AAGVTBGjBZf6VlB8Esgqy7XfjWE5JIOTIhk';
 const port = process.env.PORT || 3000; // Port for the Express server
 
 // Create a new instance of the TelegramBot
