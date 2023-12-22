@@ -10,9 +10,7 @@ bot.command("start", (ctx) => {
   ctx.reply(`Hi ${username}! Welcome to your bot.`);
 });
 
-// Start the server
-if (process.env.NODE_ENV === "production") {
-  // Use Webhooks for the production server
+
   const app = express();
   app.use(express.json());
   app.use(webhookCallback(bot, "express"));
@@ -21,8 +19,4 @@ if (process.env.NODE_ENV === "production") {
   app.listen(PORT, () => {
     console.log(`Bot listening on port ${PORT}`);
   });
-} else {
-  // Use Long Polling for development
-  bot.start();
-}
 
