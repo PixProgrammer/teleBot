@@ -34,7 +34,7 @@ app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
     
     // Set up the webhook
-    const webhookUrl = `https://your-app-url/bot${token}`;
+    const webhookUrl = 'https://frantic-cod-school-uniform.cyclic.app/bot' + token;
     bot.setWebHook(webhookUrl);
     console.log(`Webhook set up at ${webhookUrl}`);
 });
